@@ -1,5 +1,6 @@
 package com.banking.trader.services;
 
+import com.banking.trader.dto.UpdateTraderDTO;
 import com.banking.trader.persist.entity.persist.Trader;
 import com.banking.trader.persist.repo.TraderRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -41,12 +42,12 @@ public class TraderService {
                 .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "Trader not found"));
     }
 
-    /*public Trader updateTrader(String email, UpdateTraderDTO dto) {
+    public Trader updateTrader(String email, UpdateTraderDTO dto) {
         Trader trader = getTraderByEmail(email); // Throws 404 if missing
         trader.setName(dto.getName());
         trader.setUpdatedAt(new Timestamp(System.currentTimeMillis()));
         return traderRepository.save(trader);
-    }*/
+    }
 
  /*   public Trader addMoney(String email, AddMoneyTraderDTO dto) {
         Trader trader = getTraderByEmail(email); // Throws 404 if missing

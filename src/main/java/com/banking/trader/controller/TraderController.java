@@ -1,5 +1,6 @@
 package com.banking.trader.controller;
 
+import com.banking.trader.dto.UpdateTraderDTO;
 import com.banking.trader.persist.entity.persist.Trader;
 import com.banking.trader.services.TraderService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -33,12 +34,12 @@ public class TraderController {
         return ResponseEntity.ok(trader);
     }
 
-/*    @PutMapping
+    @PutMapping
     public ResponseEntity<Trader> updateTrader(@RequestParam String email, @RequestBody UpdateTraderDTO dto) {
         Trader updated = traderService.updateTrader(email, dto); // Returns 200 or 404
         return ResponseEntity.ok(updated);
     }
-
+/*
     @PutMapping("/add")
     public ResponseEntity<Trader> addMoney(@RequestParam String email, @RequestBody AddMoneyTraderDTO dto) {
         Trader updated = traderService.addMoney(email, dto); // Returns 200 or 404
