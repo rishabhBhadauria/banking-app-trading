@@ -1,4 +1,4 @@
-package com.banking.trader.persist.entity.persist;
+package com.banking.trader.persistence.entity.persist;
 
 import jakarta.persistence.*;
 import lombok.Getter;

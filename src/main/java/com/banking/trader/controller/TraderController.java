@@ -2,7 +2,7 @@ package com.banking.trader.controller;
 
 import com.banking.trader.dto.AddMoneyTraderDTO;
 import com.banking.trader.dto.UpdateTraderDTO;
-import com.banking.trader.persist.entity.persist.Trader;
+import com.banking.trader.persistence.entity.persist.Trader;
 import com.banking.trader.services.TraderService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;

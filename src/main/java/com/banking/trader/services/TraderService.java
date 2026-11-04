@@ -2,8 +2,8 @@ package com.banking.trader.services;
 
 import com.banking.trader.dto.AddMoneyTraderDTO;
 import com.banking.trader.dto.UpdateTraderDTO;
-import com.banking.trader.persist.entity.persist.Trader;
-import com.banking.trader.persist.repo.TraderRepository;
+import com.banking.trader.persistence.entity.persist.Trader;
+import com.banking.trader.persistence.repo.TraderRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
