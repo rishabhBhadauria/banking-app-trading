@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: trader
+  datasource:
+    url: jdbc:h2:mem:traderdb
+    username: sa
+    password:
+  jpa:
+    hibernate:
+      ddl-auto: update
+  docker:
+    compose:
+      enabled: false
+  autoconfigure:
+    exclude: org.springframework.boot.security.autoconfigure.UserDetailsServiceAutoConfiguration
+  web:
+    error:
+      include-stacktrace: never
+      include-message: always

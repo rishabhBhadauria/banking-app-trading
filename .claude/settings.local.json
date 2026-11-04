@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell",
+      "WebFetch(https://repo1.maven.org/maven2/org/springdoc/springdoc-openapi-starter-webmvc-ui/maven-metadata.xml)",
+      "Bash(f\u003d\"/c/Users/chauh/AppData/Local/Temp/claude/C--Users-chauh-OneDrive-Documents-Projies-SpringBoot-trader-trader/72a68f6d-2d65-464d-9063-884cd1826838/tasks/bgr53kw8f.output\"; until grep -qE \"Started TraderApplication|APPLICATION FAILED|BUILD FAILED|FAILURE|Could not resolve\" \"$f\"; do sleep 1; done; grep -E \"Started TraderApplication|Tomcat started|APPLICATION FAILED|BUILD FAILED|Could not resolve|Description:\" -A3 \"$f\" | head -30)"
+    ]
+  }
+}
