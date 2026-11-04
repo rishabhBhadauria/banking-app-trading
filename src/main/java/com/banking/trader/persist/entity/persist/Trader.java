@@ -7,7 +7,7 @@ import lombok.Setter;
 import java.sql.Timestamp;
 
 @Entity
-@Table(name = "traders")
+@Table(name = "trader")
 @Getter
 @Setter
 public class Trader {
