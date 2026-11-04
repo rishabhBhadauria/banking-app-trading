@@ -1,5 +1,6 @@
 package com.banking.trader.services;
 
+import com.banking.trader.dto.AddMoneyTraderDTO;
 import com.banking.trader.dto.UpdateTraderDTO;
 import com.banking.trader.persist.entity.persist.Trader;
 import com.banking.trader.persist.repo.TraderRepository;
@@ -49,10 +50,10 @@ public class TraderService {
         return traderRepository.save(trader);
     }
 
- /*   public Trader addMoney(String email, AddMoneyTraderDTO dto) {
+    public Trader addMoney(String email, AddMoneyTraderDTO dto) {
         Trader trader = getTraderByEmail(email); // Throws 404 if missing
         trader.setBalance(trader.getBalance() + dto.getAmount());
         trader.setUpdatedAt(new Timestamp(System.currentTimeMillis()));
         return traderRepository.save(trader);
-    }*/
+    }
 }

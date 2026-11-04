@@ -1,11 +1,17 @@
+#spring:
+#  application:
+#    name: trader
+#  datasource:
+#    url: jdbc:h2:mem:traderdb
+#    username: sa
+#    password:
 spring:
-  application:
-    name: trader
   datasource:
-    url: jdbc:h2:mem:traderdb
-    username: sa
-    password:
+    url: jdbc:mysql://localhost:3306/banking_app_trader
+    username: root        # or root
+    password: admin     # your password
   jpa:
+    show-sql: true
     hibernate:
       ddl-auto: update
   docker:
